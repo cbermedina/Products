@@ -26,9 +26,9 @@ namespace Products.Api.DataAccess.Repositories
             return result;
 
         }
-        public async Task<IEnumerable<ProductEntity>> GetAll()
+        public async Task<List<ProductEntity>> GetAll()
         {
-            return _productDBContext.Products.Select(x => x);
+            return _productDBContext.Products.ToList();
         }
     }
 }

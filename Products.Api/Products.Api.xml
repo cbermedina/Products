@@ -23,6 +23,17 @@
             <param name="app"></param>
             <returns></returns>
         </member>
+        <member name="T:Products.Api.Controllers.RatesController">
+            <summary>
+            Controller to work with transactions
+            </summary>
+        </member>
+        <member name="M:Products.Api.Controllers.RatesController.GetAllRates">
+            <summary>
+            Get all transactions
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Products.Api.Controllers.TransactionsController">
             <summary>
             Controller to work with transactions
@@ -32,6 +43,76 @@
             <summary>
             Get all transactions
             </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Products.Api.Controllers.ValuesController">
+            <summary>
+            Values Controller
+            </summary>
+        </member>
+        <member name="M:Products.Api.Controllers.ValuesController.Get">
+            <summary>
+            GET api/values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Products.Api.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            GET api/values/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Products.Api.Controllers.ValuesController.Post(System.String)">
+            <summary>
+             POST api/values
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Products.Api.Controllers.ValuesController.Put(System.Int32,System.String)">
+            <summary>
+            PUT api/values/5
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Products.Api.Controllers.ValuesController.Delete(System.Int32)">
+            <summary>
+            DELETE api/values/5
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Products.Api.Mappers.ProductMapper">
+            <summary>
+            Product Mapper
+            </summary>
+        </member>
+        <member name="T:Products.Api.Mappers.RateMapper">
+            <summary>
+            Rate Mapper
+            </summary>
+        </member>
+        <member name="T:Products.Api.Mappers.TransactionMapper">
+            <summary>
+            Transaction Mapper
+            </summary>
+        </member>
+        <member name="T:Products.Api.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:Products.Api.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Products.Api.Program.BuildWebHost(System.String[])">
+            <summary>
+            Build WebHost
+            </summary>
+            <param name="args"></param>
             <returns></returns>
         </member>
         <member name="T:Products.Api.Startup">
@@ -62,6 +143,11 @@
             </summary>
             <param name="app"></param>
             <param name="env"></param>
+        </member>
+        <member name="T:Products.Api.ViewModels.TransactionsModel">
+            <summary>
+            TransactionsModel
+            </summary>
         </member>
     </members>
 </doc>

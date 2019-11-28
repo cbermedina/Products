@@ -20,9 +20,9 @@
         {
             return await _productDBContext.Transactions.FirstOrDefaultAsync(x => x.Id == idEntity);
         }
-        public async Task<IEnumerable<TransactionEntity>> GetAll()
+        public async Task<List<TransactionEntity>> GetAll()
         {
-            return _productDBContext.Transactions.Select(x => x);
+            return _productDBContext.Transactions.ToList();
         }
     }
 }

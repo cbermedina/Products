@@ -20,9 +20,9 @@ namespace Products.Api.DataAccess.Repositories
         {
             return await _productDBContext.Rates.FirstOrDefaultAsync(x => x.Id == idEntity);
         }
-        public async Task<IEnumerable<RateEntity>> GetAll()
+        public async Task<List<RateEntity>> GetAll()
         {
-            return _productDBContext.Rates.Select(x => x);
+            return _productDBContext.Rates.ToList();
         }
     }
 }
