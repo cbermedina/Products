@@ -1,0 +1,14 @@
+E:\VSTS\Ditech\Products.Api\bin\Debug\netcoreapp2.2\Products.Api.deps.json
+E:\VSTS\Ditech\Products.Api\bin\Debug\netcoreapp2.2\Products.Api.runtimeconfig.json
+E:\VSTS\Ditech\Products.Api\bin\Debug\netcoreapp2.2\Products.Api.runtimeconfig.dev.json
+E:\VSTS\Ditech\Products.Api\bin\Debug\netcoreapp2.2\Products.Api.dll
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.csprojAssemblyReference.cache
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.csproj.CoreCompileInputs.cache
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.RazorAssemblyInfo.cache
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.RazorAssemblyInfo.cs
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.AssemblyInfoInputs.cache
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.AssemblyInfo.cs
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.RazorTargetAssemblyInfo.cache
+E:\VSTS\Ditech\Products.Api\bin\Debug\netcoreapp2.2\Products.Api.pdb
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.dll
+E:\VSTS\Ditech\Products.Api\obj\Debug\netcoreapp2.2\Products.Api.pdb

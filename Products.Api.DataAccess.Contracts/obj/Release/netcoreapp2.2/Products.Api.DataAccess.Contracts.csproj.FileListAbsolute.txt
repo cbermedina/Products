@@ -1,0 +1,9 @@
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\bin\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.deps.json
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\bin\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.dll
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\bin\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.pdb
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\obj\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.csprojAssemblyReference.cache
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\obj\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.csproj.CoreCompileInputs.cache
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\obj\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.AssemblyInfoInputs.cache
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\obj\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.AssemblyInfo.cs
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\obj\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.dll
+E:\VSTS\Ditech\Products.Api.DataAccess.Contracts\obj\Release\netcoreapp2.2\Products.Api.DataAccess.Contracts.pdb

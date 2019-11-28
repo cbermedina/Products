@@ -1,0 +1,14 @@
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.deps.json
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.runtimeconfig.json
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.runtimeconfig.dev.json
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.dll
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\bin\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.pdb
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\obj\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.csprojAssemblyReference.cache
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\obj\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.csproj.CoreCompileInputs.cache
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\obj\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.AssemblyInfoInputs.cache
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\obj\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.AssemblyInfo.cs
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\obj\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.dll
+E:\VSTS\Ditech\Products.Api.Application.Unit.Tests\obj\Release\netcoreapp2.2\Products.Api.Application.Unit.Tests.pdb

@@ -1,0 +1,9 @@
+E:\VSTS\Ditech\Products.Api.Business\bin\Release\netcoreapp2.2\Products.Api.Business.deps.json
+E:\VSTS\Ditech\Products.Api.Business\bin\Release\netcoreapp2.2\Products.Api.Business.dll
+E:\VSTS\Ditech\Products.Api.Business\bin\Release\netcoreapp2.2\Products.Api.Business.pdb
+E:\VSTS\Ditech\Products.Api.Business\obj\Release\netcoreapp2.2\Products.Api.Business.csprojAssemblyReference.cache
+E:\VSTS\Ditech\Products.Api.Business\obj\Release\netcoreapp2.2\Products.Api.Business.csproj.CoreCompileInputs.cache
+E:\VSTS\Ditech\Products.Api.Business\obj\Release\netcoreapp2.2\Products.Api.Business.AssemblyInfoInputs.cache
+E:\VSTS\Ditech\Products.Api.Business\obj\Release\netcoreapp2.2\Products.Api.Business.AssemblyInfo.cs
+E:\VSTS\Ditech\Products.Api.Business\obj\Release\netcoreapp2.2\Products.Api.Business.dll
+E:\VSTS\Ditech\Products.Api.Business\obj\Release\netcoreapp2.2\Products.Api.Business.pdb

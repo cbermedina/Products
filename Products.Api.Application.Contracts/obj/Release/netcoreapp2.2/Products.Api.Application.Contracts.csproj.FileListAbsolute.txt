@@ -1,0 +1,12 @@
+E:\VSTS\Ditech\Products.Api.Application.Contracts\bin\Release\netcoreapp2.2\Products.Api.Application.Contracts.deps.json
+E:\VSTS\Ditech\Products.Api.Application.Contracts\bin\Release\netcoreapp2.2\Products.Api.Application.Contracts.dll
+E:\VSTS\Ditech\Products.Api.Application.Contracts\bin\Release\netcoreapp2.2\Products.Api.Application.Contracts.pdb
+E:\VSTS\Ditech\Products.Api.Application.Contracts\obj\Release\netcoreapp2.2\Products.Api.Application.Contracts.csproj.CoreCompileInputs.cache
+E:\VSTS\Ditech\Products.Api.Application.Contracts\obj\Release\netcoreapp2.2\Products.Api.Application.Contracts.AssemblyInfoInputs.cache
+E:\VSTS\Ditech\Products.Api.Application.Contracts\obj\Release\netcoreapp2.2\Products.Api.Application.Contracts.AssemblyInfo.cs
+E:\VSTS\Ditech\Products.Api.Application.Contracts\obj\Release\netcoreapp2.2\Products.Api.Application.Contracts.dll
+E:\VSTS\Ditech\Products.Api.Application.Contracts\obj\Release\netcoreapp2.2\Products.Api.Application.Contracts.pdb
+E:\VSTS\Ditech\Products.Api.Application.Contracts\bin\Release\netcoreapp2.2\Products.Api.Business.dll
+E:\VSTS\Ditech\Products.Api.Application.Contracts\bin\Release\netcoreapp2.2\Products.Api.Business.pdb
+E:\VSTS\Ditech\Products.Api.Application.Contracts\obj\Release\netcoreapp2.2\Products.Api.Application.Contracts.csprojAssemblyReference.cache
+E:\VSTS\Ditech\Products.Api.Application.Contracts\obj\Release\netcoreapp2.2\Products.Api.Application.Contracts.csproj.CopyComplete

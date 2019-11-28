@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Products.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Products.Api.Config.SwaggerConfig">
+            <summary>
+            Configure Swagge
+            </summary>
+        </member>
+        <member name="M:Products.Api.Config.SwaggerConfig.AddRegistration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add configuration to swagger in service
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Products.Api.Config.SwaggerConfig.AddRegistration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Add configuration to swagger in app
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Products.Api.Controllers.TransactionsController">
+            <summary>
+            Controller to work with transactions
+            </summary>
+        </member>
+        <member name="M:Products.Api.Controllers.TransactionsController.GetAllTransactions">
+            <summary>
+            Get all transactions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Products.Api.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:Products.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Products.Api.Startup.Configuration">
+            <summary>
+            Configuration propertie
+            </summary>
+        </member>
+        <member name="M:Products.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Products.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

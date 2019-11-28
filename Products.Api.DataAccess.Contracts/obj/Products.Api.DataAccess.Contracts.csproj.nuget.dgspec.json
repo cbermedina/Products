@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\VSTS\\Ditech\\Products.Api.DataAccess.Contracts\\Products.Api.DataAccess.Contracts.csproj": {}
+  },
+  "projects": {
+    "E:\\VSTS\\Ditech\\Products.Api.DataAccess.Contracts\\Products.Api.DataAccess.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\VSTS\\Ditech\\Products.Api.DataAccess.Contracts\\Products.Api.DataAccess.Contracts.csproj",
+        "projectName": "Products.Api.DataAccess.Contracts",
+        "projectPath": "E:\\VSTS\\Ditech\\Products.Api.DataAccess.Contracts\\Products.Api.DataAccess.Contracts.csproj",
+        "packagesPath": "C:\\Users\\cupegui\\.nuget\\packages\\",
+        "outputPath": "E:\\VSTS\\Ditech\\Products.Api.DataAccess.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cupegui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/Products.Api/.vs/Products.Api/v16/Server/sqlite3
+/Products.Api/.vs/Products.Api/DesignTimeBuild/.dtbcache
