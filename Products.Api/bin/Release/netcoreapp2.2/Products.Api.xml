@@ -39,6 +39,12 @@
             Controller to work with transactions
             </summary>
         </member>
+        <member name="M:Products.Api.Controllers.TransactionsController.#ctor(Products.Api.Application.Contracts.Services.ITransactionService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="transactionService"></param>
+        </member>
         <member name="M:Products.Api.Controllers.TransactionsController.GetAllTransactions">
             <summary>
             Get all transactions

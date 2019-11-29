@@ -9,38 +9,38 @@
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Controller to work with rates
+    /// Controller to work with products
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    public class RatesController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         #region Properties
-        private readonly IRateService _rateService;
+        private readonly IProductService _productService;
         #endregion
 
         #region Constructor
         /// <summary>
         /// Contructor
         /// </summary>
-        /// <param name="rateService"></param>
-        public RatesController(IRateService rateService)
+        /// <param name="productService"></param>
+        public ProductsController(IProductService productService)
         {
-            _rateService = rateService;
+            _productService = productService;
         }
         #endregion
 
         #region Methods
         /// <summary>
-        /// Get all rates
+        /// Get all products
         /// </summary>
         /// <returns></returns>
         [HttpGet]
         [Produces("application/json", Type = typeof(List<RatesModel>))]
-        public async Task<IActionResult> GetAllRates()
+        public async Task<IActionResult> GetAllProducts()
         {
-            var lstRates = await _rateService.GetAllRates();
-            return Ok(lstRates.Select(RateMapper.Map).ToList());
+            var lstProducts = await _productService.GetAllProducts();
+            return Ok(lstProducts.Select(ProductMapper.Map).ToList());
         } 
         #endregion
     }

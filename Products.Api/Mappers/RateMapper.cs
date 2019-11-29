@@ -14,6 +14,7 @@
                 from = dto.From,
                 rate = dto.Rate,
                 to = dto.To,
+                id=dto.Id
             };
         }
 

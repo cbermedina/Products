@@ -16,11 +16,22 @@
     [ApiController]
     public class TransactionsController : ControllerBase
     {
-        private readonly ITransactionService _transactionService;
+        #region Properties
+        private readonly ITransactionService _transactionService; 
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="transactionService"></param>
         public TransactionsController(ITransactionService transactionService)
         {
             _transactionService = transactionService;
         }
+        #endregion
+
+        #region Methods
         /// <summary>
         /// Get all transactions
         /// </summary>
@@ -31,6 +42,7 @@
         {
             var lstTransactions = await _transactionService.GetAllTransactions();
             return Ok(lstTransactions.Select(TransactionMapper.Map).ToList());
-        }
+        } 
+        #endregion
     }
 }
