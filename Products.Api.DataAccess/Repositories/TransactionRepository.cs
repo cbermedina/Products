@@ -22,7 +22,28 @@
         }
         public async Task<List<TransactionEntity>> GetAll()
         {
-            return _productDBContext.Transactions.ToList();
+            return _productDBContext.Transactions.Select(s => new TransactionEntity()
+            {
+                Amount = s.Amount,
+                Id = s.Id,
+                Id_product = s.Id_product,
+                Id_rate = s.Id_rate,
+                Product = s.Product,
+                Rate = s.Rate
+            }).ToList();
+        }
+
+        public async Task<List<TransactionEntity>> GetTransactionsBySku(string sku)
+        {
+            return _productDBContext.Transactions.Where(w => w.Product.Sku == sku).Select(s => new TransactionEntity()
+            {
+                Amount = s.Amount,
+                Id = s.Id,
+                Id_product = s.Id_product,
+                Id_rate = s.Id_rate,
+                Product = s.Product,
+                Rate = s.Rate
+            }).ToList();
         }
     }
 }

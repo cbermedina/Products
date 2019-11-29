@@ -7,6 +7,6 @@
     public interface ITransactionService
     {
         Task<List<Transactions>> GetAllTransactions();
-        Task<Transactions> GetTransaction(Guid id);
+        Task<List<Transactions>> GetTransactionsBySku(string sku);
     }
 }

@@ -12,7 +12,10 @@
             entityBuilder.ToTable("Rate");
 
             entityBuilder.HasKey(x => x.Id);
-            entityBuilder.Property(x => x.Id).IsRequired();
+            entityBuilder.Property(x => x.Id).IsRequired().HasDefaultValueSql("NEWID()");
+            entityBuilder.Property(x => x.From ).IsRequired().HasMaxLength(10);
+            entityBuilder.Property(x => x.To).IsRequired().HasMaxLength(10);
+            entityBuilder.Property(x => x.Rate).IsRequired();
         }
     }
 }
