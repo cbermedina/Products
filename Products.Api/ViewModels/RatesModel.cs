@@ -1,12 +1,26 @@
-﻿using System;
-
+﻿
 namespace Products.Api.ViewModels
 {
+    using Newtonsoft.Json;
+    /// <summary>
+    /// Rates Model
+    /// </summary>
     public class RatesModel
     {
-        public Guid id { get; set; }
-        public string from { get; set; }
-        public string to { get; set; }
-        public decimal rate { get; set; }
+        /// <summary>
+        /// From
+        /// </summary>
+        [JsonProperty("from")]
+        public string From { get; set; }
+        /// <summary>
+        /// To
+        /// </summary>
+        [JsonProperty("to")]
+        public string To { get; set; }
+        /// <summary>
+        /// Rate
+        /// </summary>
+        [JsonProperty("rate")]
+        public decimal Rate { get; set; }
     }
 }

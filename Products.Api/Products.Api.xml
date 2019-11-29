@@ -74,6 +74,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Products.Api.Controllers.TransactionsController.GetTransactionsBySku(System.String)">
+            <summary>
+            Get transactions by sku
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Products.Api.Mappers.ProductMapper">
             <summary>
             Product Mapper
@@ -136,9 +142,44 @@
             <param name="app"></param>
             <param name="env"></param>
         </member>
+        <member name="T:Products.Api.ViewModels.RatesModel">
+            <summary>
+            Rates Model
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.RatesModel.From">
+            <summary>
+            From
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.RatesModel.To">
+            <summary>
+            To
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.RatesModel.Rate">
+            <summary>
+            Rate
+            </summary>
+        </member>
         <member name="T:Products.Api.ViewModels.TransactionsModel">
             <summary>
-            TransactionsModel
+            Transactions Model
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.TransactionsModel.Sku">
+            <summary>
+            Sku
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.TransactionsModel.Amount">
+            <summary>
+            Amount
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.TransactionsModel.Currency">
+            <summary>
+            Currency
             </summary>
         </member>
     </members>

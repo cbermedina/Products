@@ -12,20 +12,8 @@
             return new TransactionsModel()
             {
                 Amount = dto.Amount,
-                Id = dto.Id,
-                Id_product = dto.Id_product,
-                Id_rate= dto.Id_rate
-            };
-        }
-
-        public static Transactions Map(TransactionsModel entity)
-        {
-            return new Transactions()
-            {
-                Amount = entity.Amount,
-                Id = entity.Id,
-                Id_product = entity.Id_product,
-                Id_rate = entity.Id_rate
+                Sku = dto.Sku,
+                Currency = dto.Currency
             };
         }
     }

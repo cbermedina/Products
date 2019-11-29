@@ -42,7 +42,18 @@
         {
             var lstTransactions = await _transactionService.GetAllTransactions();
             return Ok(lstTransactions.Select(TransactionMapper.Map).ToList());
-        } 
+        }
+        /// <summary>
+        /// Get transactions by sku
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("{sku}")]
+        [Produces("application/json", Type = typeof(List<TransactionsModel>))]
+        public async Task<IActionResult> GetTransactionsBySku(string sku)
+        {
+            var lstTransactions = await _transactionService.GetTransactionsBySku(sku);
+            return Ok(lstTransactions.Select(TransactionMapper.Map).ToList());
+        }
         #endregion
     }
 }

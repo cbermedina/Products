@@ -11,10 +11,9 @@
         {
             return new RatesModel()
             {
-                from = dto.From,
-                rate = dto.Rate,
-                to = dto.To,
-                id=dto.Id
+                From = dto.From,
+                Rate = dto.Rate,
+                To = dto.To,
             };
         }
 
@@ -22,10 +21,9 @@
         {
             return new Rates()
             {
-                To = entity.to,
-                Rate = entity.rate,
-                From = entity.from,
-                Id = entity.id,
+                To = entity.To,
+                Rate = entity.Rate,
+                From = entity.From,
             };
         }
     }
