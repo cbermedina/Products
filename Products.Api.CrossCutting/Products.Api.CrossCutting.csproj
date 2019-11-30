@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Products.Api.Application.Contracts\Products.Api.Application.Contracts.csproj" />
     <ProjectReference Include="..\Products.Api.Application\Products.Api.Application.csproj" />
     <ProjectReference Include="..\Products.Api.DataAccess.Contracts\Products.Api.DataAccess.Contracts.csproj" />

@@ -51,8 +51,8 @@
         [Produces("application/json", Type = typeof(List<TransactionsModel>))]
         public async Task<IActionResult> GetTransactionsBySku(string sku)
         {
-            var lstTransactions = await _transactionService.GetTransactionsBySku(sku);
-            return Ok(lstTransactions.Select(TransactionMapper.Map).ToList());
+            var transactionsTotal = await _transactionService.GetTransactionsBySku(sku);
+            return Ok(TransactionMapper.Map(transactionsTotal));
         }
         #endregion
     }

@@ -423,6 +423,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -907,6 +916,15 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "SystemWeb/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SystemWeb.dll": {}
+        }
+      },
       "Products.Api.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -923,6 +941,9 @@
       "Products.Api.Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
         "compile": {
           "bin/placeholder/Products.Api.Business.dll": {}
         },
@@ -1677,6 +1698,37 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -3509,6 +3561,18 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "SystemWeb/1.0.0": {
+      "sha512": "z2uHLRnXO9SFXOdZlu7tPpnewXBZTEa/kg00VfeicT8LoqT6U1VbB6CxEFWKIhW5MGy5R1F3Eq9HEhm6iukpFg==",
+      "type": "package",
+      "path": "systemweb/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SystemWeb.dll",
+        "systemweb.1.0.0.nupkg.sha512",
+        "systemweb.nuspec"
+      ]
+    },
     "Products.Api.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../Products.Api.Application.Contracts/Products.Api.Application.Contracts.csproj",
@@ -3533,10 +3597,12 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
+      "Newtonsoft.Json >= 12.0.3",
       "Products.Api.Application.Contracts >= 1.0.0",
       "Products.Api.Business >= 1.0.0",
       "Products.Api.DataAccess >= 1.0.0",
-      "Products.Api.DataAccess.Contracts >= 1.0.0"
+      "Products.Api.DataAccess.Contracts >= 1.0.0",
+      "SystemWeb >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3601,6 +3667,14 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
+          "SystemWeb": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

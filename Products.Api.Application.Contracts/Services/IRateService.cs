@@ -7,7 +7,6 @@ namespace Products.Api.Application.Contracts.Services
 {
     public interface IRateService
     {
-        Task<IEnumerable<Rates>> GetAllRates();
-        Task<Rates> GetRate(Guid id);
+        Task<List<Rates>> GetAllRates();
     }
 }

@@ -80,6 +80,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Products.Api.Filters.HandleExceptionAttribute.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            On Exception
+            </summary>
+            <param name="context"></param>
+        </member>
         <member name="T:Products.Api.Mappers.ProductMapper">
             <summary>
             Product Mapper
@@ -94,6 +100,25 @@
             <summary>
             Transaction Mapper
             </summary>
+        </member>
+        <member name="M:Products.Api.Middlewares.EjemploMiddleware.UseEjemploMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Products.Api.Middlewares.LogMiddleware">
+            <summary>
+            Log Middleware
+            </summary>
+        </member>
+        <member name="M:Products.Api.Middlewares.LogMiddleware.UseLogApplicationInsights(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
         </member>
         <member name="T:Products.Api.Program">
             <summary>
@@ -180,6 +205,21 @@
         <member name="P:Products.Api.ViewModels.TransactionsModel.Currency">
             <summary>
             Currency
+            </summary>
+        </member>
+        <member name="T:Products.Api.ViewModels.TransactionsTotalModel">
+            <summary>
+            Transactions Total Model
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.TransactionsTotalModel.Total">
+            <summary>
+            Result sum Amount to transactions
+            </summary>
+        </member>
+        <member name="P:Products.Api.ViewModels.TransactionsTotalModel.transactionsModels">
+            <summary>
+            list transactions
             </summary>
         </member>
     </members>

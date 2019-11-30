@@ -17,5 +17,6 @@ namespace Products.Api.Application.Configuration
         public int SecondsToWait => int.Parse(_configuration.GetSection("Polly:TimeDelay").Value);
         public int CacheExpireInMinutes => int.Parse(_configuration.GetSection("Cache:CacheExpireInMinutes").Value);
         public string ServiceUrl => _configuration.GetSection("ServiceUrl:Url").Value;
+        public string DefaultMoney => _configuration.GetSection("Money:Currency").Value;
     }
 }

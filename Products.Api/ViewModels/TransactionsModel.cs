@@ -17,7 +17,7 @@ namespace Products.Api.ViewModels
         /// Amount
         /// </summary>
         [JsonProperty("amount")]
-        public decimal Amount { get; set; }
+        public double Amount { get; set; }
         /// <summary>
         /// Currency
         /// </summary>

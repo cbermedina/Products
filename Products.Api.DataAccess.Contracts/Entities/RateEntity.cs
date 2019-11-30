@@ -11,7 +11,7 @@
         public System.Guid Id { get; set; }
         public string From { get; set; }
         public string To { get; set; }
-        public decimal Rate { get; set; }
+        public double Rate { get; set; }
 
         public virtual ICollection<TransactionEntity> Transaction { get; set; }
     }

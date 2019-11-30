@@ -21,6 +21,6 @@ namespace Products.Api.ViewModels
         /// Rate
         /// </summary>
         [JsonProperty("rate")]
-        public decimal Rate { get; set; }
+        public double Rate { get; set; }
     }
 }

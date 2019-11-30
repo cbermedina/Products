@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Products.Api.Application.Configuration
+﻿namespace Products.Api.Application.Configuration
 {
     public interface IAppConfig
     {
@@ -10,5 +6,6 @@ namespace Products.Api.Application.Configuration
         int SecondsToWait { get; }
         string ServiceUrl { get; }
         int CacheExpireInMinutes { get; }
+        string DefaultMoney { get; }
     }
 }

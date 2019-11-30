@@ -423,6 +423,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -478,6 +487,15 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Serilog/2.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.dll": {}
         }
       },
       "System.Collections/4.0.11": {
@@ -907,14 +925,25 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "SystemWeb/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SystemWeb.dll": {}
+        }
+      },
       "Products.Api.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Products.Api.Application.Contracts": "1.0.0",
           "Products.Api.Business": "1.0.0",
           "Products.Api.DataAccess": "1.0.0",
-          "Products.Api.DataAccess.Contracts": "1.0.0"
+          "Products.Api.DataAccess.Contracts": "1.0.0",
+          "SystemWeb": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Products.Api.Application.dll": {}
@@ -939,6 +968,9 @@
       "Products.Api.Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
         "compile": {
           "bin/placeholder/Products.Api.Business.dll": {}
         },
@@ -1695,6 +1727,37 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Remotion.Linq/2.2.0": {
       "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "type": "package",
@@ -1774,6 +1837,27 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Serilog/2.9.0": {
+      "sha512": "QzcrD33A3+CsVvwi1I5CSei67ikQnkGrw7SscgL+vZTghaC2aNYg8fiUcedXHzKJFNjgje9rBjzwYGQTKEaXaA==",
+      "type": "package",
+      "path": "serilog/2.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "serilog.2.9.0.nupkg.sha512",
+        "serilog.nuspec"
       ]
     },
     "System.Collections/4.0.11": {
@@ -3525,6 +3609,18 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "SystemWeb/1.0.0": {
+      "sha512": "z2uHLRnXO9SFXOdZlu7tPpnewXBZTEa/kg00VfeicT8LoqT6U1VbB6CxEFWKIhW5MGy5R1F3Eq9HEhm6iukpFg==",
+      "type": "package",
+      "path": "systemweb/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SystemWeb.dll",
+        "systemweb.1.0.0.nupkg.sha512",
+        "systemweb.nuspec"
+      ]
+    },
     "Products.Api.Application/1.0.0": {
       "type": "project",
       "path": "../Products.Api.Application/Products.Api.Application.csproj",
@@ -3557,7 +3653,8 @@
       "Products.Api.Application >= 1.0.0",
       "Products.Api.Application.Contracts >= 1.0.0",
       "Products.Api.DataAccess >= 1.0.0",
-      "Products.Api.DataAccess.Contracts >= 1.0.0"
+      "Products.Api.DataAccess.Contracts >= 1.0.0",
+      "Serilog >= 2.9.0"
     ]
   },
   "packageFolders": {
@@ -3622,6 +3719,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Serilog": {
+            "target": "Package",
+            "version": "[2.9.0, )"
           }
         },
         "imports": [

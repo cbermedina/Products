@@ -6,9 +6,13 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Products.Api.Config;
+    using Products.Api.CrossCutting.Interface;
     using Products.Api.CrossCutting.Register;
     using Products.Api.DataAccess;
     using Products.Api.DataAccess.Contracts;
+    using Products.Api.Filters;
+    using Products.Api.Middlewares;
+
     /// <summary>
     /// Startup
     /// </summary>
@@ -37,7 +41,13 @@
             IoCRegister.AddRegistration(services);
             services.AddDbContext<ProductsDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DataBaseConnection")));
             SwaggerConfig.AddRegistration(services);
-            services.AddMvc();
+            services.AddMemoryCache();
+            var sp = services.BuildServiceProvider();
+            var logService = sp.GetService<IServiceLog>();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new HandleExceptionAttribute(logService));
+            });
         }
 
         /// <summary>
@@ -53,7 +63,9 @@
             }
 
             SwaggerConfig.AddRegistration(app);
+            app.UseLogApplicationInsights();
             app.UseMvc();
+            
         }
     }
 }

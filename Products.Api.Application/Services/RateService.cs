@@ -2,29 +2,20 @@
 {
     using Products.Api.Application.Contracts.Services;
     using Products.Api.Business.Models;
-    using Products.Api.DataAccess.Contracts.Repositories;
-    using Products.Api.DataAccess.Mappers;
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
     public class RateService : IRateService
     {
-        private readonly IRateRepository _rateRepository;
-
-        public RateService(IRateRepository rateRepository)
+        private readonly IInformationService _informationService;
+        public RateService(IInformationService informationService)
         {
-            _rateRepository = rateRepository;
+            _informationService = informationService;
         }
-        public async Task<Rates> GetRate(Guid idEntity)
+        public async Task<List<Rates>> GetAllRates()
         {
-            var rate = await _rateRepository.Get(idEntity);
-            return RateMapper.Map(rate);
-        }
-        public async Task<IEnumerable<Rates>> GetAllRates()
-        {
-            var rates = await _rateRepository.GetAll();
-            return rates.Select(RateMapper.Map);
+            List<Rates> lstRates = new List<Rates>();
+            await _informationService.GetInformation(lstRates, "RATES", "rates.json");
+            return lstRates;
         }
     }
 }

@@ -3,7 +3,7 @@
     public partial class TransactionEntity
     {
         public System.Guid Id { get; set; }
-        public decimal Amount { get; set; }
+        public double Amount { get; set; }
         public System.Guid Id_product { get; set; }
         public System.Guid Id_rate { get; set; }
 

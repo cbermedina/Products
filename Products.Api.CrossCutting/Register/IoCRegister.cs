@@ -1,9 +1,14 @@
 ﻿namespace Products.Api.CrossCutting.Register
 {
     using Microsoft.Extensions.DependencyInjection;
+    using Products.Api.Application.ApiCaller;
     using Products.Api.Application.Configuration;
+    using Products.Api.Application.Contracts.ApiCaller;
     using Products.Api.Application.Contracts.Services;
     using Products.Api.Application.Repositories;
+    using Products.Api.Application.Services;
+    using Products.Api.CrossCutting.Interface;
+    using Products.Api.CrossCutting.Service;
     using Products.Api.DataAccess.Contracts.Repositories;
     using Products.Api.DataAccess.Repositories;
     public static class IoCRegister
@@ -50,7 +55,11 @@
         /// <returns></returns>
         private static IServiceCollection AddRegisterOthers(IServiceCollection services)
         {
-            services.AddTransient<IAppConfig, AppConfig>();
+            services.AddSingleton<IAppConfig, AppConfig>();
+            services.AddTransient<IApiCaller, ApiCaller>();
+            services.AddTransient<IInformationService, InformationService>();
+            services.AddTransient<ICacheService, CacheService>();
+            services.AddSingleton<IServiceLog, ServiceLog>();
             return services;
         }
     }
